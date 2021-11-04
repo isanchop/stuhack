@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "StuHack",
+  "version": "0.2.0",
+  "description": "Banner remover, filter pass & document downloader",
+ 
+  "content_scripts": [{
+    "js": ["remove-banner.js", "doc-viewer.js", "remove-blur.js"],
+    "css": ["style.css"],
+    "matches": ["https://www.studocu.com/*"]
+  }]
+}
