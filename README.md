@@ -1,2 +1,2 @@
 # stuhack
-Chrome extension for studocu premium free
+Chrome extension for www.studocu.com to get free premium features
