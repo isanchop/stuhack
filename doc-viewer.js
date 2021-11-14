@@ -3,7 +3,14 @@ window.addEventListener('load', function(){
 		if(evt.detail === 3){
 
 			var head = document.getElementsByTagName("head")[0].innerHTML;
-			var pdf = document.getElementById('page-container-wrapper').parentNode.innerHTML;
+			
+			var pages = document.getElementById('page-container').childNodes;
+
+			for(i=0; i<pages.length; i++){
+				pages[i].childNodes[0].style = "display: block;";
+			}
+
+			var pdf = pages[0].parentNode.parentNode.parentNode.innerHTML;
 
 			newWindow = window.open("", "Document", "height=865,width=625,status=yes,toolbar=no,menubar=no");  
 			newWindow.document.getElementsByTagName("head")[0].innerHTML = head + "<style> div {filter: none !important;} </style>";
