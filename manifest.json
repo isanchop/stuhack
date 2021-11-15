@@ -2,7 +2,7 @@
   "manifest_version": 2,
  
   "name": "StuHack",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Banner remover, filter pass & document downloader",
  
   "content_scripts": [{
