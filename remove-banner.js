@@ -1,6 +1,7 @@
 window.addEventListener('load', function(){
-	var elements = document.getElementById('viewer-wrapper').childNodes;
-	elements[3].parentNode.removeChild(elements[3]);	
+	var element = document.getElementById('viewer-wrapper')
+	if(element != null){
+		var elements = element.childNodes;
+		elements[3].parentNode.removeChild(elements[3]);
+	}		
 });
-
-
