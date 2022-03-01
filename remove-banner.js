@@ -1,9 +1,11 @@
 window.addEventListener('load', function(){
-	var element = document.getElementById('viewer-wrapper')
-	if(element != null){
-		var elements = element.childNodes;
-		if (elements.length>3){
-			elements[3].parentNode.removeChild(elements[3]);
+	var banner = document.getElementById('viewer-wrapper')
+	if(banner != null){
+		var banners = banner.childNodes;
+		if (banners.length>3){
+			banners[3].parentNode.removeChild(banners[3]);
 		}
-	}		
+	}	
+	var premiumButton = document.getElementsByClassName("fa-star")[0];
+	premiumButton.parentNode.parentNode.removeChild(premiumButton.parentNode);
 });

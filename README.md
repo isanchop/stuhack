@@ -12,8 +12,8 @@ Chrome extension for www.studocu.com to get free premium features
   Documents Download:
   
     1) If document longer than 20 pages scroll down till the end of the document in order to load it (Notice if you go too fast won't load some images)
-    2) Triple click to get the document in another tab and get a preview
-    3) Press Ctrl + p in order to print and then select print document in pdf 
+    2) Press the download button to get a document preview in another tab
+    3) Press Ctrl + p in the new tab in order to print. Then select print document in pdf 
 
 
 
