@@ -1,6 +1,5 @@
 window.addEventListener('load', function(){
 	const prev_buttons = document.getElementsByClassName("fa-cloud-download-alt");
-	const buttons_length = prev_buttons.length;
 
 	button1 = document.createElement("button");
 	button1.classList.add("_049074eb82bb");
@@ -20,8 +19,6 @@ window.addEventListener('load', function(){
 	prev_buttons[1].parentNode.parentNode.prepend(button2);
 	prev_buttons[2].parentNode.parentNode.removeChild(prev_buttons[2].parentNode);
 	
-	//var buttons = document.getElementsByClassName("fa-cloud-download-alt");
-	//buttons[0].parentNode.parentNode.removeChild(buttons[0].parentNode);
 
 	function downloadDoc(){
 		var head = document.getElementsByTagName("head")[0].innerHTML;
@@ -45,5 +42,3 @@ window.addEventListener('load', function(){
 	button1.onclick = function() {downloadDoc()};
 	button2.onclick = function() {downloadDoc()};
 });
-
-
