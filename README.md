@@ -1,5 +1,10 @@
-# stuhack
-Chrome extension for www.studocu.com to get free premium features
+<p align="center">
+<img src="https://user-images.githubusercontent.com/67743899/159747006-f38ea4c4-107d-41e6-b570-1bcd9458aced.png">
+</p>
+
+#
+
+Stuack is a chrome extension for www.studocu.com to get free premium features
 
   Features:
   
@@ -27,3 +32,4 @@ Chrome extension for www.studocu.com to get free premium features
     6) Enjoy :)
    
   ![Installation](https://user-images.githubusercontent.com/67743899/149144506-714a84a0-cd10-4155-91fe-20c39753b578.jpg)
+
