@@ -1,3 +1,28 @@
 .nofilter{
     filter: none !important;
 }
+
+
+.download-button-1, .download-button-2, .github-button{
+    background: transparent;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.download-button-1{
+    background: #5bc787;
+    padding: 4px 15px;
+}
+
+.download-button-2{
+    height: 30px; 
+    min-width: 30px;
+}
+
+.github-button{
+    background: #333;
+}
