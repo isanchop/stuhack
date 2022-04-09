@@ -8,4 +8,17 @@ window.addEventListener('load', function(){
 	}	
 	var premiumButton = document.getElementsByClassName("fa-star")[0];
 	premiumButton.parentNode.parentNode.removeChild(premiumButton.parentNode);
+
+	/* Mobile */
+	if (window.innerWidth <= 990){
+		var pages = document.getElementById('page-container').childNodes;
+		if(pages != null){
+			for(i=0; i<pages.length; i++) {
+				if(pages[i].id == ''){
+					pages[i].parentNode.removeChild(pages[i]);
+				}
+			}
+		}
+	}
+	
 });

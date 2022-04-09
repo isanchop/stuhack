@@ -1,9 +1,13 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
  
   "name": "StuHack",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Banner remover, filter pass & document downloader",
+  "icons": { 
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png" },
  
   "content_scripts": [{
     "js": ["version-check.js", "remove-banner.js", "remove-blur.js", "doc-viewer.js"],
