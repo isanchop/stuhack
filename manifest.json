@@ -1,8 +1,8 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
  
   "name": "StuHack",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Banner remover, filter pass & document downloader",
   "icons": { 
     "16": "img/icon16.png",

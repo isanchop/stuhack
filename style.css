@@ -14,9 +14,16 @@
 }
 
 .download-button-1{
-    background: #5bc787;
-    margin: 0 5px;
-    padding: 4px 15px;
+    background: #2cc302;
+    display: block;
+    line-height: 1.4286;
+    margin-right: 20px;
+    padding: 8px 20px;
+    border-radius: 9999px;
+}
+
+.download-button-1:hover{
+    background-color: #259f02;
 }
 
 .download-button-2{
@@ -31,7 +38,8 @@
     display: block;
     line-height: 1.4286;
     margin-right: 20px;
-    padding: 8px 16px;
+    padding: 8px 20px;
+    border-radius: 9999px;
 }
 
 

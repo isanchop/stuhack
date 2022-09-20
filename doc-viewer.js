@@ -13,8 +13,8 @@ window.addEventListener('load', function(){
 		
 		prev_buttons[0].parentNode.parentNode.prepend(button1);
 		prev_buttons[1].parentNode.parentNode.removeChild(prev_buttons[1].parentNode);
-		prev_buttons[1].parentNode.parentNode.prepend(button2);
-		prev_buttons[2].parentNode.parentNode.removeChild(prev_buttons[2].parentNode);
+		prev_buttons[2].parentNode.parentNode.prepend(button2);
+		prev_buttons[3].parentNode.parentNode.removeChild(prev_buttons[3].parentNode);
 		
 
 		function downloadDoc(){

@@ -6,8 +6,8 @@ window.addEventListener('load', function(){
 			banners[0].parentNode.removeChild(banners[0]);
 		}
 	}	
-	var premiumButton = document.getElementsByClassName("fa-star")[0];
-	premiumButton.parentNode.parentNode.removeChild(premiumButton.parentNode);
+	var premiumButton = document.getElementById('header-position-handle').childNodes[0].childNodes[1].childNodes[0].childNodes[1];
+	premiumButton.parentNode.removeChild(premiumButton);
 
 	/* Mobile */
 	if (window.innerWidth <= 990){
