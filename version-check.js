@@ -1,7 +1,7 @@
 window.addEventListener('load', function(){
     version = chrome.runtime.getManifest().version;
 
-    const up_buttons = document.getElementsByClassName("fa-cloud-upload-alt");
+    const up_buttons = document.getElementsByClassName("fa-cloud-arrow-up");
 
     button_cv = document.createElement("button");
     button_cv.classList.add("github-button");
