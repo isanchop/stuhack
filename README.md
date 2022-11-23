@@ -34,6 +34,13 @@ Stuack is a chrome extension for www.studocu.com to get free premium features
    
   ![Installation](https://user-images.githubusercontent.com/67743899/149144506-714a84a0-cd10-4155-91fe-20c39753b578.jpg)
   
+  ### Quick YouTube tutorial in Spanish, but it's pretty simple (less than 60 seconds). 
+  <p align="center">
+    <a href="https://www.youtube.com/watch?v=D6G-quBU51w&ab_channel=MassukDev" target="_blank"><img src="https://img.youtube.com/vi/D6G-quBU51w/0.jpg" alt="Easy tutorial in Spanish" width="480" height="340" border="10" /></a>
+  </p>
+  
+  
+  
   
 ## Safari Suport
 
