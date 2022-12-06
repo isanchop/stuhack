@@ -20,5 +20,14 @@ window.addEventListener('load', function(){
 			}
 		}
 	}
+
+    try{
+		var recomendations = document.getElementById('viewer-recommendations');
+		if(recomendations != null){
+			recomendations.parentNode.parentNode.removeChild(recomendations.parentNode);
+		}
+	}catch(err){
+		console.log(err);
+	}
 	
 });
