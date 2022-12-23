@@ -81,3 +81,10 @@
     visibility: visible;
     opacity: 1;
 }
+
+
+@media print {
+    .p2hv .stopoverlappingourstyleplease {
+        display: block
+    }
+}

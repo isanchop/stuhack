@@ -40,7 +40,7 @@ window.addEventListener('load', function(){
 			newWindow.document.getElementsByTagName("head")[0].innerHTML = head + "<style> .nofilter{filter: none !important;} </style>" + "<style> @media print  {@page {size: A5;}}</style>";
 			newWindow.document.title = tit;
 			newWindow.document.getElementsByTagName("body")[0].innerHTML = pdf;
-			newWindow.document.getElementsByTagName("body")[0].childNodes[0].style = "transform: scale(1); width: 100%; height: 100%;";
+			newWindow.document.getElementsByTagName("body")[0].childNodes[0].style = "";
 			
 		}
 
