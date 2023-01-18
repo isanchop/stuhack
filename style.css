@@ -82,6 +82,17 @@
     opacity: 1;
 }
 
+.download-text{
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .download-text{
+        margin-left: 5px;
+        display: none;
+    }
+}
+
 
 @media print {
     .p2hv .stopoverlappingourstyleplease {

@@ -11,8 +11,9 @@ window.addEventListener('load', function(){
 
 	/* Mobile */
 	if (window.innerWidth <= 990){
-		var pages = document.getElementById('page-container').childNodes;
-		if(pages != null){
+		var container = document.getElementById('page-container');
+		if(container != null){
+			var pages = container.childNodes;
 			for(i=0; i<pages.length; i++) {
 				if(pages[i].id == ''){
 					pages[i].parentNode.removeChild(pages[i]);
