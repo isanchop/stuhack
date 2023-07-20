@@ -1,17 +1,20 @@
 {
   "manifest_version": 3,
- 
+
   "name": "StuHack",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Banner remover, filter pass & document downloader",
-  "icons": { 
+  "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
-    "128": "img/icon128.png" },
- 
-  "content_scripts": [{
-    "js": ["version-check.js", "remove-banner.js", "remove-blur.js", "doc-viewer.js"],
-    "css": ["style.css"],
-    "matches": ["https://www.studocu.com/*", "https://www.studeersnel.nl/*"]
-  }]
+    "128": "img/icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["version-check.js", "remove-banner.js", "remove-blur.js", "doc-viewer.js"],
+      "css": ["style.css"],
+      "matches": ["https://www.studocu.com/*", "https://www.studeersnel.nl/*"]
+    }
+  ]
 }
