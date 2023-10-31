@@ -10,6 +10,12 @@ window.addEventListener('load', function(){
 	if(premiumButton != null){
 		premiumButton.parentNode.removeChild(premiumButton);
 	}
+	var banner_wrapper = document.querySelectorAll("_8690b6fc16a3,.banner-wrapper,_4d5ecd011027");
+	if (banner_wrapper != null) {
+		for (i = 0; i < banner_wrapper.length; i++) {
+			banner_wrapper[i].style.display = "none";
+		}
+	}
 
 	/* Mobile */
 	if (window.innerWidth <= 990){
