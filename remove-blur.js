@@ -9,4 +9,17 @@ window.addEventListener('load', function(){
         }
         pages[i].classList.add("nofilter");
     }
+
+    document.getElementById('viewer-wrapper').addEventListener('scroll', () => {
+        var bluredContainers = Array.from(document.getElementsByClassName('blurred-container'));
+        bluredContainers.forEach( (bluredContainer) => {
+            bluredContainer.firstChild.src = bluredContainer.firstChild.src.replace('/blurred/', '/');
+            bluredContainer.firstChild.classList.add('bi', 'x0', 'y0', 'w1', 'h1');
+            console.log(bluredContainer.firstChild.src);
+            bluredContainer.classList.remove('blurred-container');
+
+        });
+     });
+
+    
 });
