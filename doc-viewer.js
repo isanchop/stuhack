@@ -39,11 +39,22 @@ function addButtons(){
 		}else{
 			buttons.push(button1.cloneNode(true, true));
 			buttons[i].onclick = function() {downloadDoc()};
+			prev_buttons[0].parentNode.parentNode.style.padding = "0px 0px";
 			prev_buttons[0].parentNode.parentNode.prepend(buttons[i]);
 			prev_buttons[0].parentNode.remove();
 			i++;
 		}
 		prev_buttons = document.getElementsByClassName("fa-cloud-arrow-down");
+	}
+	buttons.forEach(btn => {
+		btn.addEventListener('click', event => {
+			event.preventDefault();
+			event.stopPropagation();
+		});
+	});
+	const dialog = document.querySelector('#modal-overlay');
+	if (dialog) {
+		dialog.style.display = 'none';
 	}
 }
 
