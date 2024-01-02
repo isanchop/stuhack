@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "js": ["version-check.js", "remove-banner.js", "remove-blur.js", "doc-viewer.js"],
+      "js": ["version-check.js", "remove-banner.js", "remove-blur.js", "doc-viewer.js", "remove-previewBanner.js"],
       "css": ["style.css"],
       "matches": ["https://www.studocu.com/*", "https://www.studeersnel.nl/*"]
     }
