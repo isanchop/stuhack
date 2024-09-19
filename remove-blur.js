@@ -20,4 +20,4 @@ window.addEventListener('load', function(){
     }
     document.getElementById('viewer-wrapper').addEventListener('scroll', () => {focusImages()});
     document.getElementById('document-wrapper').addEventListener('scroll', (e) => { focusImages()});
-});
+});test
