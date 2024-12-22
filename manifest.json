@@ -14,7 +14,7 @@
     {
       "js": ["version-check.js", "remove-banner.js", "remove-blur.js", "doc-viewer.js"],
       "css": ["style.css"],
-      "matches": ["https://www.studocu.com/*", "https://www.studeersnel.nl/*"]
+      "matches": ["https://www.studocu.com/*", "https://www.studeersnel.com/*", "https://www.studocu.*/*"]
     }
   ]
 }
