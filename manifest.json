@@ -3,7 +3,7 @@
 
   "name": "StuHack",
   "version": "0.5.6",
-  "description": "Banner remover, filter pass & document downloader",
+  "description": "Banner remover, filter pass & document downloader \nVietnam studocu.vn supported\nBy isanchop - Nascho\nUpdate by Keyyard - Trinh Minh Hieu",
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
@@ -14,7 +14,7 @@
     {
       "js": ["version-check.js", "remove-banner.js", "remove-blur.js", "doc-viewer.js"],
       "css": ["style.css"],
-      "matches": ["https://www.studocu.com/*", "https://www.studeersnel.nl/*"]
+      "matches": ["https://www.studocu.com/*", "https://www.studeersnel.nl/*", "https://www.studocu.vn/*"]
     }
   ]
 }
