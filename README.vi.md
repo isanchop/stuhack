@@ -4,7 +4,7 @@
 
 # Stuhack
 
-[ᴇɴ English](./README.en.md)
+[ᴇɴ English](./README.md)
 
 ---
 
