@@ -2,8 +2,8 @@
   "manifest_version": 3,
 
   "name": "StuHack",
-  "version": "0.5.6",
-  "description": "Banner remover, filter pass & document downloader \nVietnam studocu.vn supported\nBy isanchop - Nascho\nUpdate by Keyyard - Trinh Minh Hieu",
+  "version": "0.5.7",
+  "description": "Banner remover, filter pass & document downloader \nVietnam studocu.vn supported",
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
