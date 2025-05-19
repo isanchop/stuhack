@@ -10,6 +10,7 @@ const focusImages = () => {
         }
         bluredContainer.classList.remove('blurred-container');
     });
+    
 };
 
 
@@ -25,6 +26,9 @@ window.addEventListener('load', function() {
             }
         }
         pages[i].classList.add("nofilter");
+        if (pages[i].style && pages[i].style.filter) {
+            pages[i].style.filter = '';
+        }
     }
     const viewerWrapper = document.getElementById('viewer-wrapper');
     if (viewerWrapper) {

@@ -26,7 +26,7 @@ window.addEventListener('load', function() {
         version = chrome.runtime.getManifest().version;
         const up_buttons = document.getElementsByClassName("fa-cloud-arrow-up");
         if (up_buttons && up_buttons.length > 0) {
-            const button_cv = createGithubButton(version);
+            const button_cv = createGithubButton(`Keyyard's StuHack v${version}`);
             const target = up_buttons[0].parentNode?.parentNode?.parentNode;
             const insertBeforeElem = up_buttons[0].parentNode?.parentNode?.parentElement?.children[2];
             if (target && insertBeforeElem) {
