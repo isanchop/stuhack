@@ -14,7 +14,7 @@
 }
 
 .download-button-1{
-    background: #2cc302;
+    background: #0199ec;
     display: block;
     line-height: 1.4286;
     margin-right: 20px;
@@ -23,7 +23,7 @@
 }
 
 .download-button-1:hover{
-    background-color: #259f02;
+    background-color: #018bd5;
 }
 
 .download-button-2{
@@ -35,11 +35,18 @@
 .github-button{
     background: #333;
     border: 1px solid #333;
-    display: block;
+    color: #fff;
+    display: flex;
+    align-items: center;
     line-height: 1.4286;
-    margin-right: 20px;
     padding: 8px 20px;
     border-radius: 9999px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 
