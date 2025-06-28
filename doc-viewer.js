@@ -13,7 +13,14 @@ function downloadDoc(){
 	}
 
 	for(i=0; i<pages.length; i++){
-		pages[i].childNodes[0].style = "display: block;";
+		const firstChild = pages[i].childNodes[0];
+		if(firstChild) {
+			firstChild.style = "display: block;";
+			const grandChild = firstChild.childNodes[0]
+			if(grandChild) {
+				grandChild.style = "display: block;"
+			}
+		}
 	}
 
 	var pdf = pages[0].parentNode.parentNode.parentNode.innerHTML;
