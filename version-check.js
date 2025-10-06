@@ -1,10 +1,10 @@
 window.addEventListener('load', function(){
     try {
-        version = chrome.runtime.getManifest().version;
+        var version = chrome.runtime.getManifest().version;
 
         const up_buttons = document.getElementsByClassName("fa-cloud-arrow-up");
     
-        button_cv = document.createElement("button");
+        var button_cv = document.createElement("button");
         button_cv.classList.add("github-button");
         button_cv.classList.add("tooltip-bottom");
         
