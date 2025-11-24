@@ -1,5 +1,5 @@
 const focusImages = () => {
-    var bluredContainers = Array.from(document.getElementsByClassName('blurred-container'));
+    var bluredContainers = Array.prototype.slice.call(document.getElementsByClassName('blurred-container'));
     bluredContainers.forEach( (bluredContainer) => {
         bluredContainer.firstChild.src = bluredContainer.firstChild.src.replace('/blurred/', '/');
         bluredContainer.firstChild.classList.add('bi', 'x0', 'y0', 'w1', 'h1');
@@ -9,10 +9,10 @@ const focusImages = () => {
 
 window.addEventListener('load', function(){
     var pages = document.getElementsByClassName('page-content');
-    for(i=0; i<pages.length; i++){
-        pagecontent=pages[i].parentNode.childNodes;
-        for(j=0; j<pagecontent.length; j++){
-            if(pagecontent[j].className != "page-content"){
+    for(var i=0; i<pages.length; i++){
+        var pagecontent=pages[i].parentNode.childNodes;
+        for(var j=0; j<pagecontent.length; j++){
+            if(/** @type {HTMLElement} */ (pagecontent[j]).className != "page-content"){
                 pagecontent[j].parentNode.removeChild(pagecontent[j]);
             }
         }

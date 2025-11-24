@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
 	if(premiumButton != null){
 		premiumButton.parentNode.removeChild(premiumButton);
 	}
-	var banner_wrappers = Array.from(document.getElementsByClassName('banner-wrapper'));
+	var banner_wrappers = Array.prototype.slice.call(document.getElementsByClassName('banner-wrapper'));
 	if (banner_wrappers != null) {
 		banner_wrappers.forEach( (banner_wrapper) => {
 			banner_wrapper.parentNode.removeChild(banner_wrapper);
@@ -22,8 +22,8 @@ window.addEventListener('load', function(){
 		var container = document.getElementById('page-container');
 		if(container != null){
 			var pages = container.childNodes;
-			for(i=0; i<pages.length; i++) {
-				if(pages[i].id == ''){
+			for(var i=0; i<pages.length; i++) {
+				if(/** @type {HTMLElement} */ (pages[i]).id == ''){
 					pages[i].parentNode.removeChild(pages[i]);
 				}
 			}
