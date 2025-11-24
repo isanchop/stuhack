@@ -14,6 +14,7 @@ function downloadDoc(){
 
 	for(i=0; i<pages.length; i++){
 		pages[i].childNodes[0].style = "display: block;";
+		pages[i].childNodes[0].childNodes[0].style = "display: block;";
 	}
 
 	var pdf = pages[0].parentNode.parentNode.parentNode.innerHTML;
@@ -22,7 +23,14 @@ function downloadDoc(){
 	newWindow.document.getElementsByTagName("head")[0].innerHTML = head + "<style> .nofilter{filter: none !important;} </style>" + "<style> @media print " + print_opt + "</style>";
 	newWindow.document.title = tit;
 	newWindow.document.getElementsByTagName("body")[0].innerHTML = pdf;
-	newWindow.document.getElementsByTagName("body")[0].childNodes[0].style = "";
+	newWindow.document.getElementsByTagName("body")[0].childNodes[0].style.height = "100%";
+	newWindow.document.getElementsByTagName("body")[0].childNodes[0].style.width = "100%";
+	newWindow.document.getElementsByTagName("body")[0].childNodes[0].style.transform = "";
+
+	//remove banners
+	var mb_banners = newWindow.document.querySelectorAll('[class*="banner"]');
+	mb_banners.forEach(el => el.remove());
+
 }
 
 function addButtons(){
