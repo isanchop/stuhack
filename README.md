@@ -1,3 +1,11 @@
+## ⚠️ Project discontinued
+
+It is **no longer maintained** and very likely **does not work anymore** due to changes on the Studocu website.  
+It was created purely for educational purposes and I do **not** recommend or support its use against any website’s Terms of Service.
+
+#
+#
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/67743899/159747006-f38ea4c4-107d-41e6-b570-1bcd9458aced.png">
 </p>
