@@ -10,35 +10,41 @@ It was created purely for educational purposes and I do **not** recommend or sup
 <img src="https://user-images.githubusercontent.com/67743899/159747006-f38ea4c4-107d-41e6-b570-1bcd9458aced.png">
 </p>
 
-#
+[🇻🇳 Tiếng Việt](./README.vi.md)
 
+---
 
-Stuack is a chrome extension for www.studocu.com to get free premium features
+## English
 
-## Features:
-  
-    -Premium banner remove
-    -Blur pass
-    -Documents download
-    
-    
-    
-## Documents Download:
-  
-    1) If document longer than 20 pages scroll down till the end of the document in order to load it (Notice if you go too fast won't load some images)
-    2) Press the download button to get a document preview in another tab
-    3) Press Ctrl + p in the new tab in order to print. Then select print document in pdf 
+Stuhack is a Chrome extension for studocu.com to get free premium features.
 
+My version is based on the original work of [Stuhack](https://github.com/isanchop/stuhack). Provided support for the Vietnamese version of studocu.com.
 
+### Disclaimer
 
-## Installation:
-    
-    1) Git clone or download file and unzip on a folder 
-    2) Go to the extensions tab on google chrome (chrome://extensions/)
-    3) Enable "Developer mode" on the top right of the tab
-    4) Press on "Load unpacked" new feature that appeared on top left corner
-    5) Browse the path you downloaded the extension and choose select
-    6) Enjoy :)
-   
-  ![Installation](https://user-images.githubusercontent.com/67743899/149144506-714a84a0-cd10-4155-91fe-20c39753b578.jpg)
-  
+> This extension is for educational purposes only. The author is not responsible for any misuse of this extension.  
+> Use it at your own risk. The author does not condone piracy or illegal downloading of copyrighted material.  
+> This extension is not affiliated with studocu.com in any way.
+
+### Features
+
+- Premium banner removal
+- Blur bypass
+- Document download
+
+### Documents Download
+
+1. If the document is longer than 20 pages, scroll down to the end of the document to load all pages (Note: scrolling too fast may not load some images).
+2. Press the download button to get a document preview in another tab.
+3. Press Ctrl + P in the new tab to print. Then select "Print to PDF".
+
+### Installation
+
+1. Git clone or download the files and unzip to a folder.
+2. Go to the extensions tab on Google Chrome (`chrome://extensions/`).
+3. Enable "Developer mode" at the top right.
+4. Click "Load unpacked" at the top left.
+5. Browse to the folder where you downloaded the extension and select it.
+6. Enjoy :)
+
+![Installation](https://user-images.githubusercontent.com/67743899/149144506-714a84a0-cd10-4155-91fe-20c39753b578.jpg)

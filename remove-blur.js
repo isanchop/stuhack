@@ -1,23 +1,41 @@
+
+"use strict";
+
 const focusImages = () => {
-    var bluredContainers = Array.from(document.getElementsByClassName('blurred-container'));
-    bluredContainers.forEach( (bluredContainer) => {
-        bluredContainer.firstChild.src = bluredContainer.firstChild.src.replace('/blurred/', '/');
-        bluredContainer.firstChild.classList.add('bi', 'x0', 'y0', 'w1', 'h1');
+    const bluredContainers = Array.from(document.getElementsByClassName('blurred-container'));
+    bluredContainers.forEach((bluredContainer) => {
+        if (bluredContainer.firstChild && bluredContainer.firstChild.src) {
+            bluredContainer.firstChild.src = bluredContainer.firstChild.src.replace('/blurred/', '/');
+            bluredContainer.firstChild.classList.add('bi', 'x0', 'y0', 'w1', 'h1');
+        }
         bluredContainer.classList.remove('blurred-container');
     });
-}
+    
+};
 
-window.addEventListener('load', function(){
-    var pages = document.getElementsByClassName('page-content');
-    for(i=0; i<pages.length; i++){
-        pagecontent=pages[i].parentNode.childNodes;
-        for(j=0; j<pagecontent.length; j++){
-            if(pagecontent[j].className != "page-content"){
-                pagecontent[j].parentNode.removeChild(pagecontent[j]);
+
+window.addEventListener('load', function() {
+    const pages = document.getElementsByClassName('page-content');
+    for (let i = 0; i < pages.length; i++) {
+        const pagecontent = pages[i].parentNode.childNodes;
+        for (let j = pagecontent.length - 1; j >= 0; j--) {
+            if (pagecontent[j].className !== "page-content") {
+                if (pagecontent[j].parentNode) {
+                    pagecontent[j].parentNode.removeChild(pagecontent[j]);
+                }
             }
         }
         pages[i].classList.add("nofilter");
+        if (pages[i].style && pages[i].style.filter) {
+            pages[i].style.filter = '';
+        }
     }
-    document.getElementById('viewer-wrapper').addEventListener('scroll', () => {focusImages()});
-    document.getElementById('document-wrapper').addEventListener('scroll', (e) => { focusImages()});
+    const viewerWrapper = document.getElementById('viewer-wrapper');
+    if (viewerWrapper) {
+        viewerWrapper.addEventListener('scroll', focusImages);
+    }
+    const documentWrapper = document.getElementById('document-wrapper');
+    if (documentWrapper) {
+        documentWrapper.addEventListener('scroll', focusImages);
+    }
 });
